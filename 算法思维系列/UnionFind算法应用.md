@@ -143,7 +143,7 @@ void solve(char[][] board) {
             uf.union(n * (m - 1) + j, dummy);
     }
     // 方向数组 d 是上下左右搜索的常用手法
-    int[][] d = new int[][]{{1,0}, {0,1}, {0,-1}, {-1,0}};
+    int[][] d = new int[4][2]{{1,0}, {0,1}, {0,-1}, {-1,0}};
     for (int i = 1; i < m - 1; i++) 
         for (int j = 1; j < n - 1; j++) 
             if (board[i][j] == 'O')
